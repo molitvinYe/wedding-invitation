@@ -25,22 +25,32 @@
   <body>
     <main>
       <section class="hero" aria-labelledby="invitation-title">
-        <div class="hero__ornament" aria-hidden="true">17 · 10</div>
-        <p class="eyebrow">Запрошення на розпис</p>
-        <h1 id="invitation-title">
-          <span>Євгеній</span>
-          <span class="ampersand">та</span>
-          <span>Міла</span>
-        </h1>
-        <div class="hero__date" aria-label="17 жовтня 2026 року о 14:30">
-          <span>17 жовтня</span>
-          <i aria-hidden="true"></i>
-          <span>14:30</span>
+        <figure class="hero__photo">
+          <img
+            src="assets/hero-ring.jpg"
+            alt="Руки Євгенія та Міли з каблучкою на тлі гір"
+            width="1012"
+            height="1800"
+            fetchpriority="high"
+          />
+        </figure>
+        <div class="hero__content">
+          <p class="eyebrow">Запрошення на розпис</p>
+          <h1 id="invitation-title">
+            <span>Євгеній</span>
+            <span class="ampersand">та</span>
+            <span>Міла</span>
+          </h1>
+          <div class="hero__date" aria-label="17 жовтня 2026 року о 14:30">
+            <span>17 жовтня</span>
+            <i aria-hidden="true"></i>
+            <span>14:30</span>
+          </div>
+          <p class="hero__intro">
+            Будемо раді розділити з вами цей теплий і важливий для нас день.
+          </p>
+          <a class="text-link" href="#details">Деталі зустрічі</a>
         </div>
-        <p class="hero__intro">
-          Будемо раді розділити з вами цей теплий і важливий для нас день.
-        </p>
-        <a class="text-link" href="#details">Деталі зустрічі</a>
       </section>
 
       <section class="countdown" aria-labelledby="countdown-title">
@@ -54,7 +64,6 @@
       </section>
 
       <section class="details" id="details" aria-labelledby="details-title">
-        <div class="section-number" aria-hidden="true">01</div>
         <div class="details__content">
           <p class="eyebrow">Коли та де</p>
           <h2 id="details-title">Субота,<br />17 жовтня</h2>
@@ -78,19 +87,28 @@
       </section>
 
       <section class="celebration" aria-labelledby="celebration-title">
-        <div class="celebration__line" aria-hidden="true"></div>
-        <p class="eyebrow">Після церемонії</p>
-        <h2 id="celebration-title">Продовжимо день удома</h2>
-        <p>
-          Після розпису запрошуємо вас на затишне домашнє святкування — без зайвої
-          урочистості, просто разом.
-        </p>
+        <div class="celebration__copy">
+          <p class="eyebrow">Після церемонії</p>
+          <h2 id="celebration-title">Продовжимо святкування вдома</h2>
+          <p>
+            Після розпису запрошуємо вас на затишне домашнє святкування — без зайвої
+            урочистості, просто разом.
+          </p>
+        </div>
+        <figure class="celebration__photo">
+          <img
+            src="assets/couple-home.jpg"
+            alt="Євгеній та Міла вдома"
+            width="1200"
+            height="1800"
+            loading="lazy"
+          />
+        </figure>
         <p class="gift-note">Найкращий подарунок для нас — ваша присутність. Будь ласка, без подарунків.</p>
       </section>
 
       <section class="dress-code" aria-labelledby="dress-code-title">
         <div class="dress-code__copy">
-          <div class="section-number" aria-hidden="true">02</div>
           <p class="eyebrow">Дрескод</p>
           <h2 id="dress-code-title">Світлі природні відтінки</h2>
           <p>
