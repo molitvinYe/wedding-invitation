@@ -332,33 +332,27 @@ dd {
 
 .palette {
   display: grid;
-  grid-template-columns: repeat(2, minmax(8rem, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.75rem, 1.5vw, 1.25rem);
+  justify-items: center;
 }
 
 .swatch {
-  display: flex;
-  min-height: 12rem;
-  padding: 1rem;
-  flex-direction: column;
-  justify-content: flex-end;
-  color: var(--deep);
+  width: 100%;
+  max-width: 7.5rem;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  box-shadow: inset 0 0 0 1px rgba(74, 52, 42, 0.12);
 }
 
-.swatch span {
-  font-family: var(--serif);
-  font-size: 1.05rem;
-}
-
-.swatch small {
-  font-size: 0.65rem;
-  letter-spacing: 0.08em;
-  opacity: 0.68;
-}
-
-.swatch--pearl { background: #f5f1ea; border: 1px solid var(--line); }
-.swatch--linen { background: #d8c8b4; }
-.swatch--camel { background: #ae8967; }
-.swatch--cacao { background: #6b4d3c; color: #f5f1ea; }
+.swatch--white { background: #fffefa; }
+.swatch--milk { background: #f5f0e6; }
+.swatch--cream { background: #e9decb; }
+.swatch--sand { background: #d5bea1; }
+.swatch--taupe { background: #b59a80; }
+.swatch--caramel { background: #9a7455; }
+.swatch--brown { background: #714d37; }
+.swatch--chocolate { background: #452d24; }
 
 footer {
   display: flex;
@@ -505,11 +499,7 @@ footer strong span {
   }
 
   .palette {
-    margin-inline: -1.5rem;
-  }
-
-  .swatch {
-    min-height: 10rem;
+    gap: 0.7rem;
   }
 }
 
